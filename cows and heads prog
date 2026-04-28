@@ -1,0 +1,15 @@
+t=int(input())
+for i in range(t):
+    legs,heads=map(int,input().split())
+    flag=0
+    for cows in range(0,heads+1):
+        hens=heads-cows
+        cal_legs=cows*4+hens*2
+        if cal_legs==legs:
+            flag=1
+            break
+    if flag:
+        print("cows",cows)
+        print("hens",hens)
+    else:
+        print("no solution")
