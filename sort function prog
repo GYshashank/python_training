@@ -1,0 +1,8 @@
+a="shasnkgyddh"
+b=sorted(a)
+print(b)
+
+
+a="shasnkgyddh"
+b=sorted(a,reverse=True)
+print(b)
